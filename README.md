@@ -1,6 +1,5 @@
 ## 4test
 ### Godot 3 vs 4 stutter tests
----
 
 Godot 3.3+ <https://github.com/dmaz/3test.git>
 Watching this for a bit you should notice stuttering every few seconds or more

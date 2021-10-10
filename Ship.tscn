@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvcksxata10lg"]
+
+[ext_resource type="Script" path="res://Ship.gd" id="1_cjet2"]
+[ext_resource type="Texture2D" uid="uid://dle76oqhqr4x0" path="res://icon.png" id="2_m8vrf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d1f8g"]
+radius = 14.0
+
+[node name="Ship" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource( "1_cjet2" )
+velocity = Vector2(0, 317)
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource( "2_m8vrf" )
+region_rect = Rect2(1, 32, 15, 16)
+script = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( "CircleShape2D_d1f8g" )
+script = null
